@@ -82,6 +82,22 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="JSR223 Assertion" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">def response_time = prev.getTime().toInteger();
+
+log.info(&quot;REAL TIME IS: &quot; + response_time)
+def expected_response_time = 400;
+ 
+if (response_time &gt; expected_response_time) {
+ AssertionResult.setFailure(true);
+ AssertionResult.setFailureMessage(&quot;The expected response time is : &quot; + expected_response_time + &quot;ms but it took: &quot; + response_time + &quot;ms&quot;);
+}</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>
