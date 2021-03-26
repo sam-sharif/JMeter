@@ -1,0 +1,6 @@
+execution:
+- scenario:
+    script: pass.jmx
+reporting:
+- module: final-stats
+  dump-xml: pass.xml
