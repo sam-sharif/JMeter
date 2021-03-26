@@ -1,0 +1,6 @@
+execution:
+- scenario:
+    script: Test2.jmx
+reporting:
+- module: final-stats
+  dump-xml: Test2.xml
