@@ -1,0 +1,6 @@
+execution:
+- scenario:
+    script: fail.jmx
+reporting:
+- module: final-stats
+  dump-xml: fail.xml
